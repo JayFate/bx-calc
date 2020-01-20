@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/calc/calc"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f78d1d",
+    "navigationBarTitleText": "简易计算器",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

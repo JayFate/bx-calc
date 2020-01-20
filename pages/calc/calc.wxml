@@ -1,0 +1,11 @@
+<view class="content">
+  <scroll-view scroll-y="true" style="height: 300rpx;" scroll-top="{{'10000rpx'}}" class="layout-top {{!!history || !!currentExpr?'no-bottom':''}} ">
+    <view wx:for="{{history}}" wx:key="item" class="screen threeline" >
+      {{item.content}}
+    </view>
+    <view class="screen threeline">{{currentExpr}}</view>
+  </scroll-view>
+  <view class="layout-bottom">
+    <button class="item {{itemOrange[index]?'item-orange':''}} {{index===18?'icon':''}}" wx:for="{{buttons}}" bindtap="tap" id="{{item}}" wx:key="item">{{item}}</button>
+  </view>
+</view>
