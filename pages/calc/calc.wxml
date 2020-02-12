@@ -1,5 +1,5 @@
 <view class="content">
-  <scroll-view scroll-y="true" style="height: 300rpx;" scroll-top="{{'10000rpx'}}" class="layout-top {{!!history || !!currentExpr?'no-bottom':''}} ">
+  <scroll-view scroll-y="true" style="height: 300rpx;" scroll-top="{{top}}" enable-flex="true" class="layout-top {{!!history || !!currentExpr?'no-bottom':''}} ">
     <view wx:for="{{history}}" wx:key="item" class="screen threeline" >
       {{item.content}}
     </view>

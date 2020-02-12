@@ -24,7 +24,8 @@ Page({
     history: [],
     twoline: false,
     threeline: false,
-    itemOrange: itemOrange
+    itemOrange: itemOrange,
+    top:'0rpx'
   },
   calcResult() {
     let result
@@ -89,6 +90,9 @@ Page({
         threeline: true
       })
     }
+    this.setData({
+      top:"2000rpx"
+    })
   },
   onLoad() {
     // test
@@ -105,6 +109,26 @@ Page({
     this.tap({
       currentTarget: {
         id: "001+2/3x4+5-6"
+      }
+    })
+    this.tap({
+      currentTarget: {
+        id: "="
+      }
+    })
+    this.tap({
+      currentTarget: {
+        id: "001+2/3x4+5+3"
+      }
+    })
+    this.tap({
+      currentTarget: {
+        id: "="
+      }
+    })
+    this.tap({
+      currentTarget: {
+        id: "001+2/3x4+5+3"
       }
     })
     this.tap({
